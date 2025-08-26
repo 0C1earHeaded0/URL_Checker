@@ -9,7 +9,7 @@ public abstract class URLFile {
 
     protected void checkFileExistence() throws FileNotFoundException {
         if (!file.exists()) {
-            throw new FileNotFoundException(String.format("File with URL: %s not found.", file.getName()));
+            throw new FileNotFoundException(String.format("File with URL: %s not found.", file.getAbsolutePath()));
         }
     }
 

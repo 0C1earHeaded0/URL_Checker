@@ -9,12 +9,12 @@ import java.nio.charset.StandardCharsets;
 public class NewLinesURLFile extends URLFile {
     public NewLinesURLFile(String path) throws FileNotFoundException {
         this.description = "Each url address starts on a new line.";
-        this.file = new File(path);
+        this.file = new File(path.trim());
         this.checkFileExistence();
     }
 
     @Override
-    String[] getValues() {
+    public String[] getValues() {
         try (FileInputStream in = new FileInputStream(file)) {
             return new String(in.readAllBytes(), StandardCharsets.UTF_8).split("\n");
         } catch (IOException ignored) {}
