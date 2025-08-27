@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e549fa1-716b-45ba-8bd9-7429a4dd2d6f" name="Changes" comment="added several sites to test file + created consoleView class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/view/Console.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/view/URLResultDisplay.java" afterDir="false" />
+    <list default="true" id="1e549fa1-716b-45ba-8bd9-7429a4dd2d6f" name="Changes" comment="sync implementation done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/controllers/URLFileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/controllers/URLFileProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/urlchecker/controllers/URLFileProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/urlchecker/controllers/URLFileProcessorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/urlchecker/models/NewLinesURLFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/urlchecker/models/NewLinesURLFileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/urlchecker/test_files/NewLinesURLTestFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/urlchecker/test_files/NewLinesURLTestFile.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,6 +144,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NewLinesURLFileTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.example.urlchecker.models.NewLinesURLFileTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="URLFileProcessorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -192,28 +214,6 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="URL_Checker [testClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="testClasses" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="URL_Checker [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -249,11 +249,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.NewLinesURLFileTest" />
         <item itemvalue="Application.App" />
         <item itemvalue="Gradle.URL_Checker [test]" />
         <item itemvalue="Gradle.URLFileProcessorTest" />
         <item itemvalue="Gradle.URL_Checker [check]" />
-        <item itemvalue="Gradle.URL_Checker [testClasses]" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +289,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756254936225</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added several sites to test file + created consoleView class">
+      <option name="closed" value="true" />
+      <created>1756264031083</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1756264031083</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -297,6 +305,7 @@
     <MESSAGE value="created test" />
     <MESSAGE value="finished processor + added tests" />
     <MESSAGE value="added several sites to test file + created consoleView class" />
-    <option name="LAST_COMMIT_MESSAGE" value="added several sites to test file + created consoleView class" />
+    <MESSAGE value="sync implementation done" />
+    <option name="LAST_COMMIT_MESSAGE" value="sync implementation done" />
   </component>
 </project>

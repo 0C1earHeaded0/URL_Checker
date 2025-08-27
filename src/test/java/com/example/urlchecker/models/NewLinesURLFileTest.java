@@ -11,6 +11,6 @@ public class NewLinesURLFileTest {
     public void testGetValues() throws FileNotFoundException {
         NewLinesURLFile instance = new NewLinesURLFile(TEST_FILEPATH);
         String[] ReceivedValue = instance.getValues();
-        Assertions.assertArrayEquals(new String[]{"https://google.com", "https://yandex.ru"}, ReceivedValue);
+        Assertions.assertArrayEquals(new String[]{"https://google.com", "https://yandex.ru", "http://asdfsdaf.net"}, ReceivedValue);
     }
 }

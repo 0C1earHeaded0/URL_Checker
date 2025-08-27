@@ -17,12 +17,12 @@ public class URLFileProcessorTest {
         URL[] expectURLs = new URL[]{ new URI("https://google.com").toURL(), new URI("https://yandex.ru").toURL() };
 
         URLCheckerResult[] expectResults = new URLCheckerResult[]{
-                new URLCheckerResult(expectURLs[0], (HttpURLConnection) expectURLs[0].openConnection()),
-                new URLCheckerResult(expectURLs[1], (HttpURLConnection) expectURLs[1].openConnection())
+                new URLCheckerResult(expectURLs[0].getRef(), (HttpURLConnection) expectURLs[0].openConnection(), null),
+                new URLCheckerResult(expectURLs[1].getRef(), (HttpURLConnection) expectURLs[1].openConnection(), null)
         };
 
-        String expectedResult = expectResults[0].url.getPath();
-        String realResult = URLFileProcessor.check(file)[0].url.getPath();
+        String expectedResult = expectResults[0].url;
+        String realResult = URLFileProcessor.check(file)[0].url;
 
         Assertions.assertEquals(expectedResult, realResult);
     }
