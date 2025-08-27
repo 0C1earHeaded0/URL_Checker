@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e549fa1-716b-45ba-8bd9-7429a4dd2d6f" name="Changes" comment="created test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/urlchecker/controllers/URLFileProcessorTest.java" afterDir="false" />
+    <list default="true" id="1e549fa1-716b-45ba-8bd9-7429a4dd2d6f" name="Changes" comment="added several sites to test file + created consoleView class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/view/Console.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/view/URLResultDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/controllers/URLFileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/controllers/URLFileProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/models/NewLinesURLFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/models/NewLinesURLFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/models/URLFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/models/URLFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/urlchecker/controllers/URLFileProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/urlchecker/controllers/URLFileProcessorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/urlchecker/test_files/NewLinesURLTestFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/urlchecker/test_files/NewLinesURLTestFile.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +69,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -82,6 +83,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-8.14-bin/38aieal9i53h9rfe7vjup95b9/gradle-8.14" javaHome="$USER_HOME$/.jdks/ms-21.0.8" gradleVersion="8.14" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -100,6 +104,7 @@
     "Gradle.NewLinesURLFileTest (1).executor": "Run",
     "Gradle.NewLinesURLFileTest.executor": "Run",
     "Gradle.URLFileProcessorTest.executor": "Run",
+    "Gradle.URL_Checker [:com.example.urlchecker.App.main()].executor": "Run",
     "Gradle.URL_Checker [check].executor": "Run",
     "Gradle.URL_Checker [test check].executor": "Run",
     "Gradle.URL_Checker [testClasses].executor": "Run",
@@ -127,30 +132,19 @@
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.URL_Checker [check]">
-    <configuration name="NewLinesURLFileTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.example.urlchecker.models.NewLinesURLFileTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.urlchecker.App" />
+      <module name="URLChecker.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.urlchecker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="URLFileProcessorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -255,11 +249,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.URL_Checker [check]" />
-        <item itemvalue="Gradle.URL_Checker [testClasses]" />
+        <item itemvalue="Application.App" />
         <item itemvalue="Gradle.URL_Checker [test]" />
         <item itemvalue="Gradle.URLFileProcessorTest" />
-        <item itemvalue="Gradle.NewLinesURLFileTest (1)" />
+        <item itemvalue="Gradle.URL_Checker [check]" />
+        <item itemvalue="Gradle.URL_Checker [testClasses]" />
       </list>
     </recent_temporary>
   </component>
@@ -287,12 +281,22 @@
       <option name="project" value="LOCAL" />
       <updated>1756250143895</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finished processor + added tests">
+      <option name="closed" value="true" />
+      <created>1756254936225</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1756254936225</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="created test" />
-    <option name="LAST_COMMIT_MESSAGE" value="created test" />
+    <MESSAGE value="finished processor + added tests" />
+    <MESSAGE value="added several sites to test file + created consoleView class" />
+    <option name="LAST_COMMIT_MESSAGE" value="added several sites to test file + created consoleView class" />
   </component>
 </project>

@@ -5,19 +5,25 @@ import com.example.urlchecker.models.URLFile;
 import com.example.urlchecker.utils.Configuration;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import com.example.urlchecker.controllers.URLFileProcessor.URLCheckerResult;
 
-import java.io.FileNotFoundException;
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
+import java.io.IOException;
+import java.net.*;
 
 public class URLFileProcessorTest {
     @Test
-    public void parseFileTest() throws FileNotFoundException, URISyntaxException, MalformedURLException {
+    public void checkTest() throws URISyntaxException, IOException {
         URLFile file = new NewLinesURLFile(Configuration.TEST_FILEPATH);
-        URL[] expectations = new URL[]{ new URI("https://google.com").toURL(), new URI("https://yandex.ru").toURL() };
+        URL[] expectURLs = new URL[]{ new URI("https://google.com").toURL(), new URI("https://yandex.ru").toURL() };
 
-        Assertions.assertArrayEquals(expectations, URLFileProcessor.parseFile(file));
+        URLCheckerResult[] expectResults = new URLCheckerResult[]{
+                new URLCheckerResult(expectURLs[0], (HttpURLConnection) expectURLs[0].openConnection()),
+                new URLCheckerResult(expectURLs[1], (HttpURLConnection) expectURLs[1].openConnection())
+        };
+
+        String expectedResult = expectResults[0].url.getPath();
+        String realResult = URLFileProcessor.check(file)[0].url.getPath();
+
+        Assertions.assertEquals(expectedResult, realResult);
     }
 }
