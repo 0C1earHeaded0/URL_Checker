@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 
 public class NewLinesURLFile extends URLFile {
     public NewLinesURLFile(String path) throws FileNotFoundException {
@@ -16,7 +17,8 @@ public class NewLinesURLFile extends URLFile {
     @Override
     public String[] getValues() {
         try (FileInputStream in = new FileInputStream(file)) {
-            return new String(in.readAllBytes(), StandardCharsets.UTF_8).split("\n");
+            String[] rowUrls = new String(in.readAllBytes(), StandardCharsets.UTF_8).split("\n");
+            return Arrays.stream(rowUrls).map(String::trim).toArray(String[]::new);
         } catch (IOException ignored) {}
 
         return new String[0];

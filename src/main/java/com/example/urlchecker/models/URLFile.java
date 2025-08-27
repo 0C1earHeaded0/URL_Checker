@@ -13,5 +13,5 @@ public abstract class URLFile {
         }
     }
 
-    abstract String[] getValues();
+    public abstract String[] getValues();
 }
