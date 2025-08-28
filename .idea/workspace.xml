@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="URLChecker.main:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e549fa1-716b-45ba-8bd9-7429a4dd2d6f" name="Changes" comment="sync implementation done">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/libs/CLI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/urlchecker/test_files/NewLinesURLTestFile2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/controllers/URLFileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/controllers/URLFileProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/utils/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/utils/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/view/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/view/Console.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/view/URLResultDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/urlchecker/view/URLResultDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/urlchecker/controllers/URLFileProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/urlchecker/controllers/URLFileProcessorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/urlchecker/models/NewLinesURLFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/urlchecker/models/NewLinesURLFileTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/urlchecker/test_files/NewLinesURLTestFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/urlchecker/test_files/NewLinesURLTestFile.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +86,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -115,10 +126,10 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHELLCHECK.PATH": "I do mind",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "AsyncImpl",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/k.shinkarenko@aso.rt.local/IdeaProjects/URL_Checker/src/test/java/com/example/urlchecker/test_files",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
@@ -130,7 +141,7 @@
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Gradle.URL_Checker [test]">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.urlchecker.App" />
       <module name="URLChecker.main" />
@@ -249,9 +260,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.URL_Checker [test]" />
         <item itemvalue="Gradle.NewLinesURLFileTest" />
         <item itemvalue="Application.App" />
-        <item itemvalue="Gradle.URL_Checker [test]" />
         <item itemvalue="Gradle.URLFileProcessorTest" />
         <item itemvalue="Gradle.URL_Checker [check]" />
       </list>
@@ -297,8 +308,27 @@
       <option name="project" value="LOCAL" />
       <updated>1756264031083</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="sync implementation done">
+      <option name="closed" value="true" />
+      <created>1756267607430</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1756267607430</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
